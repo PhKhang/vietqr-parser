@@ -1,0 +1,562 @@
+[
+    {
+        "key": "abbank",
+        "name": "Ngân hàng ABBANK",
+        "code": "ABB",
+        "shortName": "ABBANK",
+        "bin": "970425",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970425_LOGO_1663814323158_1283856.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970425_BG_1663814323057_1283853.png",
+        "accentColor": "#00828c"
+    },
+    {
+        "key": "acb",
+        "name": "Ngân hàng ACB",
+        "code": "ACB",
+        "shortName": "ACB",
+        "bin": "970416",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970416_LOGO_1663814244970_1282371.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970416_BG_1663814244868_1282370.png",
+        "accentColor": "#002896"
+    },
+    {
+        "key": "agribank",
+        "name": "Ngân hàng Agribank",
+        "code": "VBA",
+        "shortName": "Agribank",
+        "bin": "970405",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970405_LOGO_1663814242966_1282332.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970405_BG_1663814242861_1282331.png",
+        "accentColor": "#8c2846"
+    },
+    {
+        "key": "bacabank",
+        "name": "Ngân hàng BacABank",
+        "code": "BAB",
+        "shortName": "BacABank",
+        "bin": "970409",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970409_LOGO_1663814243846_1282350.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970409_BG_1663814243745_1282347.png",
+        "accentColor": "#647878"
+    },
+    {
+        "key": "baoviet",
+        "name": "Ngân hàng BaoVietBank",
+        "code": "BVB",
+        "shortName": "BaoVietBank",
+        "bin": "970438",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970438_LOGO_1663814325678_1283894.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970438_BG_1663814325574_1283893.png",
+        "accentColor": "#0078be"
+    },
+    {
+        "key": "bidv",
+        "name": "Ngân hàng BIDV",
+        "code": "BIDV",
+        "shortName": "BIDV",
+        "bin": "970418",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970418_LOGO_1663814245195_1282378.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970418_BG_1663814245073_1282372.png",
+        "accentColor": "#006e64"
+    },
+    {
+        "key": "cake",
+        "name": "Ngân hàng CAKE",
+        "code": "CAKE",
+        "shortName": "CAKE",
+        "bin": "546034",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/546034_LOGO_1663814241511_1282314.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/546034_BG_1663814241327_1282309.png",
+        "accentColor": "#d21478"
+    },
+    {
+        "key": "cbbank",
+        "name": "Ngân hàng CBBank",
+        "code": "CBB",
+        "shortName": "CBBank",
+        "bin": "970444",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970444_LOGO_1663814347582_1284256.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970444_BG_1663814347477_1284254.png",
+        "accentColor": "#0a508c"
+    },
+    {
+        "key": "cimb",
+        "name": "Ngân hàng CIMB",
+        "code": "CIMB",
+        "shortName": "CIMB",
+        "bin": "422589",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/422589_LOGO_1663814241002_1282299.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/422589_BG_1663814240900_1282298.png",
+        "accentColor": "#780a1e"
+    },
+    {
+        "key": "coopbank",
+        "name": "Ngân hàng COOPBANK",
+        "code": "COOPBANK",
+        "shortName": "COOPBANK",
+        "bin": "970446",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970446_LOGO_1663814347785_1284261.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970446_BG_1663814347683_1284259.png",
+        "accentColor": "#0046b4"
+    },
+    {
+        "key": "dbsbank",
+        "name": "Ngân hàng DBSBank",
+        "code": "DBS",
+        "shortName": "DBSBank",
+        "bin": "796500",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/796500_LOGO_1663814242137_1282323.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/796500_BG_1663814242034_1282321.png",
+        "accentColor": "#1e1e1e"
+    },
+    {
+        "key": "dongabank",
+        "name": "Ngân hàng DongABank",
+        "code": "DOB",
+        "shortName": "DongABank",
+        "bin": "970406",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970406_LOGO_1663814243179_1282337.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970406_BG_1663814243067_1282335.png",
+        "accentColor": "#004682"
+    },
+    {
+        "key": "eximbank",
+        "name": "Ngân hàng Eximbank",
+        "code": "EIB",
+        "shortName": "Eximbank",
+        "bin": "970431",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970431_LOGO_1663814324414_1283879.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970431_BG_1663814324313_1283878.png",
+        "accentColor": "#146496"
+    },
+    {
+        "key": "gpbank",
+        "name": "Ngân hàng GPBank",
+        "code": "GPB",
+        "shortName": "GPBank",
+        "bin": "970408",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970408_LOGO_1663814243644_1282346.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970408_BG_1663814243541_1282345.png",
+        "accentColor": "#1e5096"
+    },
+    {
+        "key": "hdbank",
+        "name": "Ngân hàng HDBank",
+        "code": "HDB",
+        "shortName": "HDBank",
+        "bin": "970437",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970437_LOGO_1663814325475_1283892.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970437_BG_1663814325374_1283891.png",
+        "accentColor": "#963232"
+    },
+    {
+        "key": "hongleongbank",
+        "name": "Ngân hàng HongLeong",
+        "code": "HLBVN",
+        "shortName": "HongLeong",
+        "bin": "970442",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970442_LOGO_1663814347151_1284241.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970442_BG_1663814347048_1284237.png",
+        "accentColor": "#143c8c"
+    },
+    {
+        "key": "hsbc",
+        "name": "Ngân hàng HSBC",
+        "code": "HSBC",
+        "shortName": "HSBC",
+        "bin": "458761",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/458761_LOGO_1663814241204_1282306.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/458761_BG_1663814241102_1282302.png",
+        "accentColor": "#b43228"
+    },
+    {
+        "key": "ibkhcm",
+        "name": "Ngân hàng IBK HCM",
+        "code": "IBKHCM",
+        "shortName": "IBK HCM",
+        "bin": "970456",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970456_LOGO_1663814349125_1284284.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970456_BG_1663814349023_1284283.png",
+        "accentColor": "#143c82"
+    },
+    {
+        "key": "ibkhn",
+        "name": "Ngân hàng IBK HN",
+        "code": "IBKHN",
+        "shortName": "IBK HN",
+        "bin": "970455",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970455_LOGO_1663814348922_1284282.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970455_BG_1663814348801_1284280.png",
+        "accentColor": "#143c82"
+    },
+    {
+        "key": "indovinabank",
+        "name": "Ngân hàng IndovinaBank",
+        "code": "IVB",
+        "shortName": "IndovinaBank",
+        "bin": "970434",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970434_LOGO_1663814325068_1283888.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970434_BG_1663814324967_1283887.png",
+        "accentColor": "#0a6eb4"
+    },
+    {
+        "key": "kasikorn",
+        "name": "Ngân hàng KBank",
+        "code": "KBANK",
+        "shortName": "KBank",
+        "bin": "668888",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/668888_LOGO_1663814241935_1282320.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/668888_BG_1663814241812_1282319.png",
+        "accentColor": "#6e645a"
+    },
+    {
+        "key": "kienlongbank",
+        "name": "Ngân hàng KienLongBank",
+        "code": "KLB",
+        "shortName": "KienLongBank",
+        "bin": "970452",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970452_LOGO_1663814348402_1284275.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970452_BG_1663814348301_1284274.png",
+        "accentColor": "#006e78"
+    },
+    {
+        "key": "kookminhcm",
+        "name": "Ngân hàng KookminHCM",
+        "code": "KBHCM",
+        "shortName": "KookminHCM",
+        "bin": "970463",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970463_LOGO_1663814350005_1284306.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970463_BG_1663814349887_1284304.png",
+        "accentColor": "#d29600"
+    },
+    {
+        "key": "kookminhn",
+        "name": "Ngân hàng KookminHN",
+        "code": "KBHN",
+        "shortName": "KookminHN",
+        "bin": "970462",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970462_LOGO_1663814349772_1284300.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970462_BG_1663814349663_1284296.png",
+        "accentColor": "#d29600"
+    },
+    {
+        "key": "lienvietpostbank",
+        "name": "Ngân hàng LienVietPostBank",
+        "code": "LPB",
+        "shortName": "LienVietPostBank",
+        "bin": "970449",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970449_LOGO_1663814348200_1284273.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970449_BG_1663814348096_1284272.png",
+        "accentColor": "#b46e32"
+    },
+    {
+        "key": "mbbank",
+        "name": "Ngân hàng MBBank",
+        "code": "MB",
+        "shortName": "MBBank",
+        "bin": "970422",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970422_LOGO_1663814322514_1283836.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970422_BG_1663814322393_1283833.png",
+        "accentColor": "#1e2896"
+    },
+    {
+        "key": "msb",
+        "name": "Ngân hàng MSB",
+        "code": "MSB",
+        "shortName": "MSB",
+        "bin": "970426",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970426_LOGO_1663814323388_1283862.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970426_BG_1663814323260_1283859.png",
+        "accentColor": "#f06400"
+    },
+    {
+        "key": "momo",
+        "name": "MoMo",
+        "code": "momo",
+        "shortName": "MoMo",
+        "bin": "momo",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2024/3/7/MOMO_LOGO_1709808981373_153573.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2024/3/7/MOMO_BG_1709808998708_438320.png",
+        "accentColor": "#aa0064"
+    },
+    {
+        "key": "namabank",
+        "name": "Ngân hàng NamABank",
+        "code": "NAB",
+        "shortName": "NamABank",
+        "bin": "970428",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2023/3/29/970428_LOGO_1680087310689_30331.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2023/3/29/970428_BG_1680087310580_30330.png",
+        "accentColor": "#006eb4"
+    },
+    {
+        "key": "ncb",
+        "name": "Ngân hàng NCB",
+        "code": "NCB",
+        "shortName": "NCB",
+        "bin": "970419",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970419_LOGO_1663814322045_1283822.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970419_BG_1663814321859_1283819.png",
+        "accentColor": "#0a50a0"
+    },
+    {
+        "key": "nonghyup",
+        "name": "Ngân hàng Nonghyup",
+        "code": "NHBHN",
+        "shortName": "Nonghyup",
+        "bin": "801011",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/801011_LOGO_1663814242341_1282326.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/801011_BG_1663814242239_1282324.png",
+        "accentColor": "#0064b4"
+    },
+    {
+        "key": "ocb",
+        "name": "Ngân hàng OCB",
+        "code": "OCB",
+        "shortName": "OCB",
+        "bin": "970448",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970448_LOGO_1663814347991_1284268.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970448_BG_1663814347887_1284267.png",
+        "accentColor": "#008c46"
+    },
+    {
+        "key": "mbv",
+        "name": "Ngân hàng MBV",
+        "code": "MBV",
+        "shortName": "MBV",
+        "bin": "970414",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2025/9/25/logo_mbv_1758784091106_40922.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2025/8/26/970414_BG_1756193437018_1076003.png",
+        "accentColor": "#b41e1e"
+    },
+    {
+        "key": "pgbank",
+        "name": "Ngân hàng PGBank",
+        "code": "PGB",
+        "shortName": "PGBank",
+        "bin": "970430",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2024/11/8/970430_LOGO_1731052099896_498406.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970430_BG_1663814324108_1283876.png",
+        "accentColor": "#143ca0"
+    },
+    {
+        "key": "publicbank",
+        "name": "Ngân hàng PublicBank",
+        "code": "PBVN",
+        "shortName": "PublicBank",
+        "bin": "970439",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970439_LOGO_1663814325883_1283897.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970439_BG_1663814325781_1283896.png",
+        "accentColor": "#8c000a"
+    },
+    {
+        "key": "pvcombank",
+        "name": "Ngân hàng PVcomBank",
+        "code": "PVCB",
+        "shortName": "PVcomBank",
+        "bin": "970412",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970412_LOGO_1663814244328_1282355.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970412_BG_1663814244147_1282354.png",
+        "accentColor": "#0078aa"
+    },
+    {
+        "key": "sacombank",
+        "name": "Ngân hàng Sacombank",
+        "code": "STB",
+        "shortName": "Sacombank",
+        "bin": "970403",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2023/3/29/970403_LOGO_1680087310472_30329.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2023/3/29/970403_BG_1680087310365_30328.png",
+        "accentColor": "#004696"
+    },
+    {
+        "key": "saigonbank",
+        "name": "Ngân hàng SaigonBank",
+        "code": "SGICB",
+        "shortName": "SaigonBank",
+        "bin": "970400",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970400_LOGO_1663814242554_1282328.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970400_BG_1663814242441_1282327.png",
+        "accentColor": "#1464aa"
+    },
+    {
+        "key": "scb",
+        "name": "Ngân hàng SCB",
+        "code": "SCB",
+        "shortName": "SCB",
+        "bin": "970429",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970429_LOGO_1663814324007_1283875.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970429_BG_1663814323906_1283874.png",
+        "accentColor": "#143c82"
+    },
+    {
+        "key": "seabank",
+        "name": "Ngân hàng SeABank",
+        "code": "SEAB",
+        "shortName": "SeABank",
+        "bin": "970440",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970440_LOGO_1663814326105_1283901.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970440_BG_1663814325985_1283899.png",
+        "accentColor": "#aa3c3c"
+    },
+    {
+        "key": "shb",
+        "name": "Ngân hàng SHB",
+        "code": "SHB",
+        "shortName": "SHB",
+        "bin": "970443",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970443_LOGO_1663814347375_1284250.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970443_BG_1663814347272_1284245.png",
+        "accentColor": "#283c8c"
+    },
+    {
+        "key": "shinhanbank",
+        "name": "Ngân hàng ShinhanBank",
+        "code": "SHBVN",
+        "shortName": "ShinhanBank",
+        "bin": "970424",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970424_LOGO_1663814322956_1283850.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970424_BG_1663814322832_1283845.png",
+        "accentColor": "#141e6e"
+    },
+    {
+        "key": "standardcharteredbank",
+        "name": "Ngân hàng StandardChartered",
+        "code": "SCVN",
+        "shortName": "StandardChartered",
+        "bin": "970410",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970410_LOGO_1663814244047_1282352.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970410_BG_1663814243947_1282351.png",
+        "accentColor": "#148c32"
+    },
+    {
+        "key": "techcombank",
+        "name": "Ngân hàng Techcombank",
+        "code": "TCB",
+        "shortName": "Techcombank",
+        "bin": "970407",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970407_LOGO_1663814585950_1287538.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970407_BG_1663814243286_1282339.png",
+        "accentColor": "#282828"
+    },
+    {
+        "key": "tpbank",
+        "name": "Ngân hàng TPBank",
+        "code": "TPB",
+        "shortName": "TPBank",
+        "bin": "970423",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970423_LOGO_1663814322733_1283844.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970423_BG_1663814322632_1283841.png",
+        "accentColor": "#640aaa"
+    },
+    {
+        "key": "ubank",
+        "name": "Ngân hàng Ubank",
+        "code": "UBANK",
+        "shortName": "Ubank",
+        "bin": "546035",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/546035_LOGO_1663814241711_1282317.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/546035_BG_1663814241612_1282315.png",
+        "accentColor": "#fab414"
+    },
+    {
+        "key": "uob",
+        "name": "Ngân hàng UnitedOverseas",
+        "code": "UOB",
+        "shortName": "UnitedOverseas",
+        "bin": "970458",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970458_LOGO_1663814349559_1284294.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970458_BG_1663814349453_1284293.png",
+        "accentColor": "#001e64"
+    },
+    {
+        "key": "vib",
+        "name": "Ngân hàng VIB",
+        "code": "VIB",
+        "shortName": "VIB",
+        "bin": "970441",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970441_LOGO_1663814346946_1284233.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970441_BG_1663814346841_1284230.png",
+        "accentColor": "#0064b4"
+    },
+    {
+        "key": "vietabank",
+        "name": "Ngân hàng VietABank",
+        "code": "VAB",
+        "shortName": "VietABank",
+        "bin": "970427",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970427_LOGO_1663814323599_1283866.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970427_BG_1663814323493_1283863.png",
+        "accentColor": "#284678"
+    },
+    {
+        "key": "vietbank",
+        "name": "Ngân hàng VietBank",
+        "code": "VIETBANK",
+        "shortName": "VietBank",
+        "bin": "970433",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970433_LOGO_1663814324864_1283886.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970433_BG_1663814324763_1283884.png",
+        "accentColor": "#005aaa"
+    },
+    {
+        "key": "banviet",
+        "name": "Ngân hàng Bản Việt",
+        "code": "VCCB",
+        "shortName": "BVBank",
+        "bin": "970454",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2024/6/3/970454_LOGO_1717398822585_703120.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970454_BG_1663814348599_1284277.png",
+        "accentColor": "#143c82"
+    },
+    {
+        "key": "vietcombank",
+        "name": "Ngân hàng Vietcombank",
+        "code": "VCB",
+        "shortName": "Vietcombank",
+        "bin": "970436",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970436_LOGO_1663814325271_1283890.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970436_BG_1663814325169_1283889.png",
+        "accentColor": "#1e6e46"
+    },
+    {
+        "key": "vietinbank",
+        "name": "Ngân hàng VietinBank",
+        "code": "ICB",
+        "shortName": "VietinBank",
+        "bin": "970415",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970415_LOGO_1663814244759_1282367.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970415_BG_1663814244637_1282360.png",
+        "accentColor": "#005a96"
+    },
+    {
+        "key": "vpbank",
+        "name": "Ngân hàng VPBank",
+        "code": "VPB",
+        "shortName": "VPBank",
+        "bin": "970432",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970432_LOGO_1663814324642_1283883.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970432_BG_1663814324521_1283881.png",
+        "accentColor": "#147846"
+    },
+    {
+        "key": "vrb",
+        "name": "Ngân hàng VRB",
+        "code": "VRB",
+        "shortName": "VRB",
+        "bin": "970421",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970421_LOGO_1663814322270_1283829.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970421_BG_1663814322146_1283825.png",
+        "accentColor": "#003282"
+    },
+    {
+        "key": "wooribank",
+        "name": "Ngân hàng Woori",
+        "code": "WVN",
+        "shortName": "Woori",
+        "bin": "970457",
+        "thumb": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970457_LOGO_1663814349335_1284288.png",
+        "bgUrl": "https://res-zalo.zadn.vn/upload/media/2022/9/22/970457_BG_1663814349232_1284287.png",
+        "accentColor": "#0064aa"
+    }
+]
