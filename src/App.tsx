@@ -6,6 +6,7 @@ import type { VietQRData } from "./vietqrParser";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Upload, Camera, Scan, Copy, Check } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [qrData, setQrData] = useState<VietQRData | null>(null);
