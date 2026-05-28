@@ -13,6 +13,7 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [manualQrString, setManualQrString] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const parser = new VietQRParser();
@@ -34,7 +35,7 @@ function App() {
         const canvas = document.createElement("canvas");
         canvas.width = img.width;
         canvas.height = img.height;
-        const ctx = canvas.getContext("2d");
+        const ctx = canvas.getContext("2d", { willReadFrequently: true });
         if (!ctx) throw new Error("Failed to get canvas context");
 
         ctx.drawImage(img, 0, 0);
@@ -46,7 +47,15 @@ function App() {
         );
 
         // Use jsQR to decode
-        type JsQRFunction = (data: Uint8ClampedArray, width: number, height: number) => { data: string } | null;
+        type JsQROptions = {
+          inversionAttempts?: "dontInvert" | "onlyInvert" | "attemptBoth" | "invertFirst";
+        };
+        type JsQRFunction = (
+          data: Uint8ClampedArray,
+          width: number,
+          height: number,
+          options?: JsQROptions
+        ) => { data: string } | null;
         const jsQR = (window as { jsQR?: JsQRFunction }).jsQR;
         if (!jsQR) {
           setError("QR decoding library not loaded");
@@ -54,7 +63,48 @@ function App() {
           return;
         }
 
-        const code = jsQR(imageData.data, imageData.width, imageData.height);
+        const decode = (data: ImageData) =>
+          jsQR(data.data, data.width, data.height, { inversionAttempts: "attemptBoth" });
+
+        const boostContrast = (data: Uint8ClampedArray, contrast: number) => {
+          const intercept = 128 * (1 - contrast);
+          for (let i = 0; i < data.length; i += 4) {
+            const luminance = 0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2];
+            const value = Math.max(0, Math.min(255, luminance * contrast + intercept));
+            data[i] = value;
+            data[i + 1] = value;
+            data[i + 2] = value;
+          }
+        };
+
+        const maxDimension = 1200;
+        const baseScale = Math.min(1, maxDimension / Math.max(img.width, img.height));
+        const scaleSteps = [1, 0.75, 0.5, 0.35, 0.25];
+        let code: { data: string } | null = null;
+
+        // Try multiple downscaled passes to improve detection on large or low-contrast images.
+        for (const step of scaleSteps) {
+          const scale = baseScale * step;
+          const width = Math.max(1, Math.floor(img.width * scale));
+          const height = Math.max(1, Math.floor(img.height * scale));
+          canvas.width = width;
+          canvas.height = height;
+          ctx.drawImage(img, 0, 0, width, height);
+
+          const imageData = ctx.getImageData(0, 0, width, height);
+          code = decode(imageData);
+          if (code) break;
+
+          const contrasted = new ImageData(
+            new Uint8ClampedArray(imageData.data),
+            width,
+            height
+          );
+          boostContrast(contrasted.data, 1.35);
+          code = decode(contrasted);
+          if (code) break;
+        }
+
         if (code) {
           setRawQrString(code.data);
           const result = parser.invoke(code.data);
@@ -142,6 +192,28 @@ function App() {
     reader.readAsDataURL(file);
   };
 
+  const handleManualParse = () => {
+    const value = manualQrString.trim();
+    if (!value) {
+      setError("Please paste a QR string first");
+      return;
+    }
+
+    setLoading(true);
+    setError(null);
+    setRawQrString(value);
+
+    setTimeout(() => {
+      const result = parser.invoke(value);
+      if (result.success && result.data) {
+        setQrData(result.data);
+      } else {
+        setError(result.error || "Failed to parse QR code");
+      }
+      setLoading(false);
+    }, 0);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b">
@@ -159,7 +231,7 @@ function App() {
       </header>
 
       <main className="container mx-auto px-4 py-8">
-        <div className="grid gap-6 md:grid-cols-2 mb-6">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-6">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -203,6 +275,34 @@ function App() {
                 <kbd className="px-2 py-1 bg-background border rounded text-xs">Cmd+V</kbd>
                 {" "}to paste
               </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Copy className="h-5 w-5" />
+                Paste QR String
+              </CardTitle>
+              <CardDescription>Paste the raw QR payload string and parse it</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <textarea
+                value={manualQrString}
+                onChange={(event) => setManualQrString(event.target.value)}
+                placeholder="Paste QR string here"
+                rows={5}
+                className="w-full resize-y rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-xs outline-none placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]"
+              />
+              <Button
+                onClick={handleManualParse}
+                className="w-full"
+                size="lg"
+                disabled={loading || manualQrString.trim().length === 0}
+              >
+                <Scan className="mr-2 h-4 w-4" />
+                Parse QR String
+              </Button>
             </CardContent>
           </Card>
         </div>
