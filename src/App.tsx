@@ -1,11 +1,11 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { QRScanner } from "./QRScanner";
 import { VietQRDisplay } from "./VietQRDisplay";
 import { VietQRParser } from "./vietqrParser";
 import type { VietQRData } from "./vietqrParser";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Upload, Camera, Scan, Copy, Check } from "lucide-react";
+import { Upload, Camera, Scan, Copy, Check, AlertTriangle, X } from "lucide-react";
 
 function App() {
   const [qrData, setQrData] = useState<VietQRData | null>(null);
@@ -16,7 +16,7 @@ function App() {
   const [manualQrString, setManualQrString] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const parser = new VietQRParser();
+  const parser = useMemo(() => new VietQRParser(), []);
 
   const copyToClipboard = async (text: string) => {
     try {
@@ -28,7 +28,7 @@ function App() {
     }
   };
 
-  const processImageFromSource = async (imgSrc: string) => {
+  const processImageFromSource = useCallback(async (imgSrc: string) => {
     try {
       const img = new Image();
       img.onload = async () => {
@@ -39,12 +39,6 @@ function App() {
         if (!ctx) throw new Error("Failed to get canvas context");
 
         ctx.drawImage(img, 0, 0);
-        const imageData = ctx.getImageData(
-          0,
-          0,
-          canvas.width,
-          canvas.height
-        );
 
         // Use jsQR to decode
         type JsQROptions = {
@@ -129,7 +123,7 @@ function App() {
       );
       setLoading(false);
     }
-  };
+  }, [parser]);
 
   useEffect(() => {
     const handlePaste = async (event: ClipboardEvent) => {
@@ -159,7 +153,7 @@ function App() {
     return () => {
       document.removeEventListener("paste", handlePaste);
     };
-  }, []);
+  }, [processImageFromSource]);
 
   const handleQRDetected = (data: string) => {
     setLoading(true);
@@ -322,7 +316,7 @@ function App() {
           <Card className="mb-6 border-destructive">
             <CardContent className="flex items-start gap-4 pt-6">
               <div className="rounded-full bg-destructive/10 p-2">
-                <span className="text-2xl">⚠️</span>
+                <AlertTriangle className="h-6 w-6 text-destructive" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold text-destructive">Error</h3>
@@ -357,7 +351,7 @@ function App() {
                   setRawQrString(null);
                 }}
               >
-                ✕
+                <X className="h-4 w-4" />
               </Button>
             </CardContent>
           </Card>

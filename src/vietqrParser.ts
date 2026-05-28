@@ -26,7 +26,7 @@ export const PayloadFormat = {
 
 export type PayloadFormat = typeof PayloadFormat[keyof typeof PayloadFormat];
 
-export function getPayloadFormat(_value: string | undefined): PayloadFormat {
+export function getPayloadFormat(): PayloadFormat {
   return PayloadFormat.FORMAT_01;
 }
 
@@ -36,7 +36,7 @@ export const Currency = {
 
 export type Currency = typeof Currency[keyof typeof Currency];
 
-export function getCurrency(_value: string | undefined): Currency {
+export function getCurrency(): Currency {
   return Currency.VND;
 }
 
@@ -46,7 +46,7 @@ export const Country = {
 
 export type Country = typeof Country[keyof typeof Country];
 
-export function getCountry(_value: string | undefined): Country {
+export function getCountry(): Country {
   return Country.VN;
 }
 
@@ -158,14 +158,14 @@ export class VietQRParser {
       }
 
       const result: VietQRData = {
-        payloadFormat: getPayloadFormat(map.get("00")),
+        payloadFormat: getPayloadFormat(),
         method: getMethod(map.get("01")),
         accountBankBin: map.get("38-00") || "",
         accountNumber: map.get("38-01") || "",
         accountType: getAccountType(map.get("38-02")),
-        currency: getCurrency(map.get("53")),
+        currency: getCurrency(),
         amount: map.get("54") || null,
-        country: getCountry(map.get("58")),
+        country: getCountry(),
         additional: map.get("62") || null,
         note: map.get("62-08") || null,
         crc: map.get("63") || null,
